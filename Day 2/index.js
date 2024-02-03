@@ -23,7 +23,9 @@ function writeToFile(filePath, content) {
     fs.writeFile(filePath, content, (err) => {
         if (err) {
             console.error(`Error writing to file: ${err.message}`);
-        } else {
+        } 
+        
+        else {
             console.log(`Data written to ${filePath}`);
         }
     });
